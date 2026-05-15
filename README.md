@@ -1,0 +1,24 @@
+# Login Firebase App
+
+## デモ
+![demo](demo.gif)
+<img width="1920" height="1020" alt="demo" src="https://github.com/user-attachments/assets/e549350c-e519-4d95-86a2-b7311d53ac10" />
+
+## 概要
+Spring Boot と Firebase Authentication を使用したログイン機能付きWebアプリです。
+
+## 機能
+- ユーザー登録（Firebase）
+- ログイン機能
+- エラーメッセージ表示
+- Thymeleafによる画面制御
+
+## 使用技術
+- Java 17
+- Spring Boot
+- Thymeleaf
+- Firebase Authentication
+- Gradle
+
+## URL
+http://localhost:8080/login
