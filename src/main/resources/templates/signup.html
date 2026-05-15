@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<title>新規ユーザー登録</title>
+
+	<style>
+		.password-wrapper {
+			position: relative;
+			width: 100%;
+		}
+
+		.password-wrapper input {
+			width: 100%;
+			padding-right: 36px;
+			box-sizing: border-box;
+		}
+
+		.password-toggle {
+			position: absolute;
+			right: 8px;
+			top: 50%;
+			transform: translateY(-50%);
+			cursor: pointer;
+		}
+
+		.input-box {
+			width: 260px;
+			box-sizing: border-box;
+			margin-bottom: 16px;
+		}
+	</style>
+
+	<script>
+		// パスワード表示切り替え
+		function togglePassword() {
+			const pw = document.getElementById("password");
+			const icon = document.getElementById("toggleIcon");
+
+			if (pw.type === "password") {
+				pw.type = "text";
+				icon.textContent = "👁";
+			} else {
+				pw.type = "password";
+				icon.textContent = "👁‍🗨";
+			}
+		}
+
+		// ページロード時にリセット
+		window.onload = function () {
+			document.getElementById("registerForm").reset();
+		};
+	</script>
+
+</head>
+
+<body>
+
+	<h2>新規ユーザー登録</h2>
+
+	<form id="registerForm" th:action="@{/signup}" method="post" put type="email" name="email" style="width: 100%;">
+		</div>
+		<label>メールアドレス</label>
+		<div class="input-box">
+			<input type="email" name="email" style="width: 100%; box-sizing: border-box;">
+		</div>
+
+		<label>パスワード</label>
+		<div class="input-box">
+			<div class="password-wrapper">
+				<input type="password" id="password" name="password" required>
+				<span class="password-toggle" id="toggleIcon" onclick="togglePassword()">👁‍🗨</span>
+			</div>
+		</div>
+
+		<button type="submit">登録</button>
+
+		<p>
+			<a th:href="@{/login}">ログイン画面へ</a>
+		</p>
+
+		<!-- エラーメッセージ -->
+		<p th:if="${errorMessage}" th:text="${errorMessage}" style="color:red;"></p>
+
+	</form>
+
+</body>
+
+</html>

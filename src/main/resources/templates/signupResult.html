@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<title>登録失敗</title>
+</head>
+
+<body>
+
+	<h2>登録に失敗しました</h2>
+
+	<p th:text="${errorMessage}" style="color:red;"></p>
+
+	<p>
+		<a th:href="@{/signup}">戻る</a>
+	</p>
+</body>
+
+</html>
