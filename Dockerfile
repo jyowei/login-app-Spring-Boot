@@ -10,4 +10,4 @@ RUN chmod +x gradlew
 RUN ./gradlew build --no-daemon
 
 # jar名固定で確実起動
-CMD ["sh", "-c", "java -jar build/libs/*.jar"]
+CMD ["java", "-jar", "build/libs/LoginFirebaseSpringboot-0.0.1-SNAPSHOT.jar"]
