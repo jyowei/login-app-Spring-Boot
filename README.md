@@ -1,8 +1,9 @@
 # Login Firebase App
 
-## デモ
-![demo](demo.gif)
-<img width="1920" height="1020" alt="demo" src="https://github.com/user-attachments/assets/e549350c-e519-4d95-86a2-b7311d53ac10" />
+
+## デモ動画
+
+![ログイン画面](demo.gif)
 
 ## 概要
 Spring Boot と Firebase Authentication を使用したログイン機能付きWebアプリです。
