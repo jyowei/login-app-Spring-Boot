@@ -14,6 +14,15 @@ Spring Boot と Firebase Authentication を使用したログイン機能付きW
 - エラーメッセージ表示
 - Thymeleafによる画面制御
 
+## 設計資料
+
+- docs/spec.md
+- docs/screen.md
+- docs/db.md
+- docs/api.md
+- docs/sequence.md
+- docs/class.md
+
 ## 使用技術
 - Java 17
 - Spring Boot
