@@ -4,15 +4,15 @@
 
 ユーザー  
   ↓  
-View（ログイン画面 /login）
-  ↓ POST /login
-Controller（LoginController）
-  ↓
-Service（FirebaseService：認証処理）
-  ↓
-Firebase Authentication API
-  ↓
-認証結果（成功 / 失敗）
+View（ログイン画面 /login）  
+  ↓ POST /login  
+Controller（LoginController）  
+  ↓  
+Service（FirebaseService：認証処理）  
+  ↓  
+Firebase Authentication API  
+  ↓  
+認証結果（成功 / 失敗）  
 
 ├ 成功
 │   ↓
