@@ -1,15 +1,18 @@
 # 画面遷移図
 
-/login（ログイン画面）
-    ↓ POST /login
-    ↓ 認証成功
-/mypage（ユーザー画面）
+## ログイン
 
-/signup（登録画面）
-    ↓ POST /signup
-    ↓ 登録成功
-/login
+[ログイン画面] (/login)
+    ├─ 成功 (POST /login) → [マイページ] (/mypage)
+    └─ 失敗 (POST /login) → [ログイン画面（エラー表示）]
 
-/mypage
-    ↓ GET /logout
-/login
+## 新規登録
+
+[登録画面] (/signup)
+    ├─ 成功 (POST /signup) → [ログイン画面]
+    └─ 失敗 (POST /signup) → [登録画面（エラー表示）]
+
+## マイページ
+
+[マイページ] (/mypage)
+    └─ ログアウト (GET /logout) → [ログイン画面]
