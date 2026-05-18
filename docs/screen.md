@@ -2,8 +2,8 @@
 
 ## ログイン
 
-[ログイン画面] (/login)
-#
+[ログイン画面] (/login)  
+
 ├─ 成功（POST /login）
 │   └→ [マイページ] (/mypage)
 └─ 失敗（POST /login）
