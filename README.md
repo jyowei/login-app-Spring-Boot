@@ -22,3 +22,7 @@ Spring Boot と Firebase Authentication を使用したログイン機能付きW
 
 ## URL
 http://localhost:8080/login
+
+## 公開URL
+https://login-app-spring-boot.onrender.com/login
+
