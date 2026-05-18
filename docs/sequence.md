@@ -2,8 +2,8 @@
 
 ## ① ログイン処理
 
-ユーザー
-  ↓
+ユーザー  
+  ↓  
 View（ログイン画面 /login）
   ↓ POST /login
 Controller（LoginController）
